@@ -50,3 +50,15 @@ G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template
 G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
 G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.exe
 G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
