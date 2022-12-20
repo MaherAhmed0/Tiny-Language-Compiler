@@ -36,13 +36,32 @@ namespace JASON_Compiler
         // Program → Function_Statement Main_Function
         Node Program()
         {
-            Node program = new Node("Program");
-            program.Children.Add(Function_Statement());
+            Node program = new Node("Program");           
+            program.Children.Add(Functions());
             program.Children.Add(Main_Function());
             MessageBox.Show("Success");
             return program;
         }
-
+        // Prog → Function_Statement Prog | ε
+        Node Functions()
+        {
+            Node functions = new Node("Functions");
+            if ((TokenStream[InputPointer + 1].token_type != Token_Class.Main) 
+                && (InputPointer + 1 < TokenStream.Count)
+                && TokenStream[InputPointer].token_type == Token_Class.Int
+                || TokenStream[InputPointer].token_type == Token_Class.Float
+                || TokenStream[InputPointer].token_type == Token_Class.String
+                )
+            {
+                functions.Children.Add(Function_Statement());
+                functions.Children.Add(Functions());
+            }
+            else
+            {
+                return null;
+            }
+            return functions;
+        }
         // Function_Statement → Function_Declaration Function_Body
         Node Function_Statement()
         {
@@ -333,7 +352,13 @@ namespace JASON_Compiler
                 || TokenStream[InputPointer].token_type == Token_Class.L_Bracket
                 && InputPointer < TokenStream.Count)
             {
-                expression.Children.Add(General_Equation());
+                if (TokenStream[InputPointer + 1].token_type == Token_Class.Plus
+                    || TokenStream[InputPointer + 1].token_type == Token_Class.Minus
+                    || TokenStream[InputPointer + 1].token_type == Token_Class.Multiply
+                    || TokenStream[InputPointer + 1].token_type == Token_Class.Divide)
+                {
+                    expression.Children.Add(General_Equation());
+                }
             }
             return expression;
         }
@@ -342,7 +367,11 @@ namespace JASON_Compiler
         Node Term()
         {
             Node term = new Node("Term");
-            if (TokenStream[InputPointer].token_type == Token_Class.Idenifier && InputPointer < TokenStream.Count)
+            if (TokenStream[InputPointer].token_type == Token_Class.Number && InputPointer < TokenStream.Count)
+            {
+                term.Children.Add(match(Token_Class.Number));
+            }
+            else if (TokenStream[InputPointer].token_type == Token_Class.Idenifier && InputPointer < TokenStream.Count)
             {
                 if (TokenStream[InputPointer + 1].token_type == Token_Class.L_Bracket && InputPointer + 1 < TokenStream.Count)
                 {
@@ -353,10 +382,7 @@ namespace JASON_Compiler
                     term.Children.Add(match(Token_Class.Idenifier));
                 }
             }
-            else if (TokenStream[InputPointer].token_type == Token_Class.Number && InputPointer < TokenStream.Count)
-            {
-                term.Children.Add(match(Token_Class.Number));
-            }
+            
             return term;
         }
 
@@ -586,11 +612,9 @@ namespace JASON_Compiler
         // Statments → Statment State
         Node Statements()
         {
-            Node statements = new Node("Statements ");
-            //statements.Children.Add(Statement());
-            //statements.Children.Add(State());
-            Statement();
-            State();
+            Node statements = new Node("Statements");
+            statements.Children.Add(Statement());
+            statements.Children.Add(State());
             return statements;
         }
 
@@ -657,7 +681,6 @@ namespace JASON_Compiler
                 state.Children.Add(match(Token_Class.Semicolon));
                 state.Children.Add(Statement());
                 state.Children.Add(State());
-
             }
             else
             {
