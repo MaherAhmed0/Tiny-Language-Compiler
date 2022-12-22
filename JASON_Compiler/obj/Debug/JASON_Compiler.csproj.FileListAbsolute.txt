@@ -62,3 +62,15 @@ D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\
 D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
 D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
 D:\Courses\Compilers Theory\M_2\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\Ali01\source\repos\Tiny-Language-Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb

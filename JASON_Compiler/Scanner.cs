@@ -157,9 +157,11 @@ namespace JASON_Compiler
                         j++;
                     }
                     if (CurrentChar == '\"')
+                    {
                         CurrentLexeme += '\"';
-                    FindTokenClass(CurrentLexeme);
-                    i = ++j;
+                        FindTokenClass(CurrentLexeme);
+                        i = j;
+                    }
                 }
                 ///////////////////////////
                 else if (CurrentChar == '{' || CurrentChar == '}')
